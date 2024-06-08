@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color:black;
+
+}
+
+nav {
+
+    background-color: #4e4d4d;
+
+    color: #fff;
+
+    padding: 10px 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+nav ul {
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+}
+
+nav ul li {
+
+    margin-right: 50px;
+
+}
+
+nav ul li a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+
+    font-size: 1.2rem;
+
+    font-family: "Kanit", sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
+
+}
+
+nav ul li a:hover {
+
+    color: #cabf99;
+
+}
+
+.logo{
+
+    font-size: 1.2rem;
+
+    margin-left: 18px;
+
+    font-family: "Kanit", sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
+
+}
+
+.container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    height: 100vh;
+
+    background-color: black;
+
+    color: #cabf99;
+
+
+
+}
+
+
+
+.profile {
+
+    margin-left: 20px; 
+
+    margin-right: 220px;
+
+}
+
+
+
+.profile img {
+
+    width: 390px; 
+
+    border-radius: 200px;
+
+}
+
+
+
+.content {
+
+    text-align: left;
+
+    margin-left: 200px;
+
+    margin-top: -70px;
+
+}
+
+
+
+.fade-in {
+
+    opacity: 0;
+
+    transition: opacity 0.6s ease-in-out;
+
+}
+
+
+
+.fade-in.visible {
+
+    opacity: 1;
+
+}
+
+
+
+h1 {
+
+    font-size: 7rem;
+
+    margin-bottom: 15px;
+
+    font-family: "Libre Baskerville", serif;
+
+  font-weight: 700;
+
+  font-style: normal;
+
+    
+
+}
+
+
+
+p {
+
+    font-size: 23px;
+
+    color: #fff;
+
+    font-family: "Kanit", sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+    
+
+}
+
+
+
+.beimg {
+
+    margin-left: 80px; 
+
+    margin-right: -100px;
+
+}
+
+
+
+.beimg img {
+
+    width: 620px; 
+
+    
+
+}
+
+
+
+.cse{
+
+    margin-left: -40px;
+
+}
+
+.prog{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    height: 100vh;
+
+    background-color:black;
+
+    color:#cabf99;
+
+    margin-right: 190px;
+
+    margin-top: -140px;
+
+    
+
+}
+
+
+
+h2{
+
+    font-size: 4rem;
+
+    color: #cabf99;
+
+    text-align: center;
+
+    margin-left: -150px;
+
+    margin-top: 160px;
+
+    font-family: "Libre Baskerville", serif;
+
+  font-weight: 700;
+
+  font-style: normal;
+
+}
+
+
+
+.lang img{
+
+    width: 200px;
+
+    height:220px ;
+
+    border-radius: 30px;
+
+    margin: 5px;
+
+}
+
+
+
+.lang{
+
+    margin: -40px;
+
+}
+
+
+
+.lang a img:hover{
+
+    width: 210px;
+
+    height:230px ;
+
+    
+
+    transition: 0.3s all ease-in-out;
+
+    
+
+}
+
+.About{
+
+    padding-left: 70px;
+
+    margin-top: -400px;
+
+
+
+}
+
+
+
+.me{
+
+    margin-top: -250px;
+
+    word-spacing: 3px;
+
+    letter-spacing: 1px;
+
+    margin-right: 80px;
+
+}
+
+
+
+.heading{
+
+    color: #cabf99;
+
+    text-align: center;
+
+    padding-top:-50px;
+
+    font-size: 5rem;
+
+}
+
+
+
+.icons{
+
+    text-align: center;
+
+    font-size: 2rem;
+
+    padding-top: 50px;
+
+    padding-bottom: 40px;
+
+}
+
+
+
+.icons a{
+
+    padding: 20px;
+
+    color:#fff;
+
+    text-decoration: none;
+
+
+
+}
+
+.icons a:hover{
+
+    font-size: 2.5rem;
+
+    color: #cabf99;
+
+}
+
+
+
+.contact{
+
+    padding-top: -10px;
+
+}
+
+
+
+.lastline{
+
+    margin-bottom: 150px;
+
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+
+            <!-- Your logo or website name here -->
+
+            MK
+
+        </div>
+
+        <ul>
+
+            <li><a href="#about">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="content fade-in">
+
+            <h1>Dharshini</h1>
+
+            <p>Student at Kongu Engineering College</p>
+
+           
+
+        </div>
+
+        <div class="profile">
+
+            <img src="mk.jpeg" alt="Your Photo">
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="container">
+
+        <div class="beimg">
+
+            <img src="pexels-neo-853421-2653362.jpg" alt="Your Photo">
+
+        </div>
+
+        <div class="content fade-in">
+
+            <h1 class="cse">Front-End developer </h1>
+
+            <p>Web Developer | Computer Science Engineer</p>
+
+           
+
+        </div>
+
+    </div>
+
+    <div class="content fade-in">
+
+        
+
+            <h2>TECHNICAL SKILLS</h2>
+
+        
+
+    </div>
+
+
+
+    <div class="prog">
+
+        
+
+        <div class="content fade-in">
+
+            
+
+           <div class="lang">
+
+                <a href="#"><img src="C.png" alt="c"></a>
+
+            </div>
+
+        </div>
+
+        <div class="content fade-in">
+
+            <div class="lang">
+
+                <a href="#"><img src="C++.png" alt="c++"></a>
+
+             </div>
+
+        </div>
+
+        <div class="content fade-in">
+
+            <div class="lang">
+
+                <a href="#"><img src="JAVA.webp" alt="java"></a>
+
+            </div>
+
+        </div>
+
+        <div class="content fade-in">
+
+            <div class="lang">
+
+                <a href="#"><img src="PYTHON.webp" alt="python"></a>
+
+            </div>
+
+        </div>    
+
+        
+
+    </div>
+
+    <div class="container">
+
+        <h1 class="About">About</h1>
+
+        <div class="content fade-in">
+
+            <p class="me">I'm Dharshini, currently pursuing a Bachelor's degree in Computer Science and Engineering at Kongu Engineering College. My academic journey revolves around my passion for web development, a field I find endlessly fascinating for its creative potential and problem-solving opportunities.
+
+
+
+               <br><br> With a strong foundation in both front-end and back-end development, I continually seek to expand my knowledge and skills through coursework and personal projects. My goal is to not only grasp the intricacies of programming languages and frameworks but also to apply them innovatively in real-world scenarios.
+
+                
+
+                <br><br>Outside of the classroom, I enjoy exploring new technologies and keeping abreast of industry trends through self-directed learning and online communities. While I devote much of my time to academic pursuits, I also find relaxation and enjoyment in occasional badminton matches with friends, striking a balance between mental stimulation and physical activity.
+
+                
+
+                
+
+                </p>
+
+        </div>
+
+    </div>
+
+    <div class="contact">
+
+
+
+        <h1 class="heading">CONTACT</h1><br><br>
+
+        
+
+            <div class="icons">
+
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+            <a href=""><i class="fa-brands fa-github"></i></a>
+
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+
+            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+
+        
+
+            
+
+
+
+    </div>
+
+    <center>
+
+        <p class="lastline">dharshinimk.22cse@kongu.edu </p>
+
+        </center>
+
+
+
+    <script>
+
+        // Function to check if an element is in the viewport
+
+function isInViewport(element) {
+
+    var rect = element.getBoundingClientRect();
+
+    return (
+
+        rect.top >= 50 &&
+
+        rect.left >= 50 &&
+
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+    );
+
+}
+
+
+
+// Function to handle scroll event
+
+function handleScroll() {
+
+    var elements = document.querySelectorAll('.fade-in');
+
+    elements.forEach(function(element) {
+
+        if (isInViewport(element)) {
+
+            element.classList.add('visible');
+
+        }
+
+    });
+
+}
+
+
+
+window.addEventListener('scroll', handleScroll);
+
+
+
+window.addEventListener('DOMContentLoaded', handleScroll);
+
+
+
+    </script> <!-- Link to your JavaScript file -->
+
+</body>
+
+</html>
